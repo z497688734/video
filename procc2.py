@@ -37,7 +37,7 @@ while True:
     mask = cv2.inRange(hsv_roi, lower_color, upper_color)
 
     # 替换目标颜色为白色
-    roi[mask > 0] = (255, 255, 255)
+    roi[mask > 0] = (250,253,251)
 
     frame[y:y+h, x:x+w] = roi
     out.write(frame)
